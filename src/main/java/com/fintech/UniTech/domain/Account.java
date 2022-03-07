@@ -1,13 +1,17 @@
 package com.fintech.UniTech.domain;
 
 import com.fintech.UniTech.enums.AccountStatus;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Data
 @Entity
 @Table(name = "accounts")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Account {
 
     @Id

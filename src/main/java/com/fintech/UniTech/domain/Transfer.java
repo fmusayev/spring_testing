@@ -1,12 +1,16 @@
 package com.fintech.UniTech.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Data
 @Entity
 @Table(name = "transfers")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Transfer {
 
     @Id
